@@ -26,7 +26,6 @@ export const tokenConfig = getState => {
   return config
 }
 
-
 export const uploadConfig = (getState, onUploadProgress) => {
 
   // Get token from localStorage
