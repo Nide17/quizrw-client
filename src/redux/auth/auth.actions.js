@@ -3,7 +3,7 @@ import { returnErrors } from '../error/error.actions'
 import { USER_LOADED, USER_LOADING, AUTH_ERROR, LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT_SUCCESS, REGISTER_SUCCESS, REGISTER_FAIL, GET_USERS, UPDATE_USER, DELETE_USER, UPDATE_USER_FAIL, DELETE_USER_FAIL, USERS_LOADING, RESET_PASSWORD, FORGOT_PASSWORD, UNEXISTING_EMAIL } from "./auth.types";
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw-server.herokuapp.com/',
+  baseURL: 'https://quizrw-server.herokuapp.com',
 });
 
 //HELPER FUNCTION TO GET THE TOKEN - SETUP CONFIG/headers and token
@@ -25,6 +25,7 @@ export const tokenConfig = getState => {
   }
   return config
 }
+
 
 export const uploadConfig = (getState, onUploadProgress) => {
 
