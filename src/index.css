@@ -1,0 +1,931 @@
+body {
+    background-color: #f3f3f2 !important;
+    font-family: "Montserrat", Tahoma, sans-serif !important;
+}
+
+div#root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
+}
+
+
+header {
+    flex-shrink: 0;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+div.main {
+    flex: 1 0 auto;
+}
+
+/* primary: #157A6E */
+/* success: #499F68 */
+/* info: #77B28C */
+/* secondary: #C2C5BB */
+/* danger: #B4654A */
+
+.card .small-text {
+    font-size: .7rem !important;
+    font-weight: bold !important;
+}
+
+nav.bg-primary,
+.modal-header.bg-primary,
+button.btn-primary {
+    background-color: #157A6E !important;
+}
+
+.modal-header .close {
+    color: red;
+}
+
+header .close {
+    color: red;
+    font-size: 2.5rem
+}
+
+nav .collapse .navbar-text {
+    cursor: pointer;
+}
+
+.posts .text-primary {
+    color: #157A6E !important;
+}
+
+.posts .text-primary a,
+.posts .text-primary a:active {
+    color: #157A6E !important;
+}
+
+.posts .text-success {
+    color: #499F68 !important;
+}
+
+.posts .text-danger {
+    color: #B4654A !important;
+}
+
+.posts .text-yellow {
+    color: #dfc533 !important;
+}
+
+.card.card-body.bg-secondary {
+    background-color: #f3f3f2 !important;
+    border: none;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255) !important;
+}
+
+.navbar-toggler {
+    border: 0px solid transparent !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important
+}
+
+.tags p {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border: .5px solid #6c757d;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.tags p:hover {
+    cursor: context-menu;
+    background-color: transparent;
+}
+
+div .jumbotron {
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+    background-color: #f3f3f2 !important;
+    border-radius: .3rem;
+}
+
+.blink_me {
+    color: #ffffff !important;
+    background-color: rgb(148, 123, 97);
+    padding: .08rem .5rem .2rem .5rem;
+    border: 1px solid #B4654A;
+    border-radius: 5px !important;
+    animation: blinker 1.8s linear infinite;
+}
+
+.blink_load {
+    color: #ffffff !important;
+    background-color: #157A6E;
+    padding: .8rem;
+    border: 1px solid #ffffff;
+    border-radius: 5px !important;
+    animation: blinker 1.8s linear infinite;
+}
+
+.blink_more {
+    animation: blinker 1.8s linear infinite;
+}
+
+a.blink_me,
+a.blink_me:active,
+a.blink_me:hover {
+    text-decoration: none;
+}
+
+.answer-option.btn.btn-outline-info {
+    transition: all .5s ease;
+}
+
+.answer-option.btn.btn-outline-info:hover {
+    color: black !important;
+    background-color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.answer-option.btn.btn-outline-info:active {
+    color: rgb(255, 255, 255) !important;
+    background-color: #157A6E !important;
+}
+
+div.answer,
+div.question-section {
+    opacity: 1;
+    animation-name: answer;
+    animation-duration: 3s;
+}
+
+.master-btns a.text-success:hover {
+    color: #ffffff !important;
+}
+
+.single-category .toast-header .mr-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.quiz-toast .toast-header .mr-auto {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.users-toast .toast-header .mr-auto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.categories-toast .toast {
+    max-width: 100%;
+    height: 400px !important;
+    overflow-y: scroll !important;
+}
+
+.quiz-toast .toast,
+.report-toast .toast,
+.admin-toast .toast,
+.contact-card .card {
+    height: 160px !important;
+    overflow-y: scroll !important;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar {
+    height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #157A6E;
+    border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #499F68;
+    border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0b3b36;
+}
+
+.badge {
+    line-height: 1.8;
+}
+
+.question-view .card .btn-outline-primary {
+    color: white;
+    border-color: white;
+}
+
+.question-view .card .btn-secondary {
+    background-color: #157A6E;
+}
+
+.search input {
+    border-radius: 5px;
+    border-color: #157A6E;
+    height: 2.2rem;
+    padding: .35rem .9rem;
+}
+
+.search input::placeholder {
+    font-size: 1rem;
+    margin-left: 2rem !important;
+}
+
+.search .input-group-append span {
+    background-color: #157A6E;
+    border-color: #157A6E;
+}
+
+.modal-content {
+    height: fit-content;
+}
+
+.forgot-password .search input {
+    border-radius: 25px;
+}
+
+.forgot-password button.d-block {
+    border-radius: 25px;
+    background-color: #157A6E;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: .25rem .4rem !important;
+    font-size: .7rem !important;
+    line-height: 1 !important;
+}
+
+.all-scores {
+    font-size: .9rem !important;
+}
+
+.quiz-carousel .custom-tag {
+    width: 100%;
+    height: 400px;
+    background: rgb(60, 62, 90);
+}
+
+.quiz-carousel .carousel-caption {
+    background-color: rgb(60, 62, 90);
+    opacity: 0.8;
+    padding: .4rem;
+    margin: 0;
+    font-weight: 900 !important;
+    border-radius: 10px;
+}
+
+.quiz-carousel .carousel-item img,
+.subscribe-form img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.quiz-carousel .carousel-caption h3 {
+    font-size: 2.5rem;
+}
+
+.quiz-carousel .carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.scores-pagination .btn {
+    font-weight: 900;
+    padding: .2rem .6rem;
+    font-size: .9rem;
+    line-height: 1;
+    border-radius: .25rem;
+    margin-left: 1rem;
+}
+
+.scores-pagination .btn:disabled {
+    cursor: not-allowed;
+}
+
+.resouces-card .card {
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+        -41px -5px 40px -23px rgba(22, 193, 59, 0.07);
+    box-shadow: 0px 10px 13px -7px #000000,
+        -41px -5px 40px -23px rgba(22, 193, 59, 0.07);
+}
+
+.resouces-card .card h6,
+.resouces-card .card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.resouces-card .card h6 :hover,
+.resouces-card .card p :hover {
+    overflow: visible;
+}
+
+.similar-quizes .card h5 {
+    font-size: .8rem !important;
+    font-weight: 900 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.similar-quizes .card p,
+.similar-quizes .card .btn a {
+    font-size: .7rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.courses-categories .nav a {
+    color: #157A6E;
+}
+
+.course-notes .courses-content {
+    background-color: #e5e6e7;
+}
+
+
+.course-notes .courses-content .courses-categories {
+    background-color: #e9ecef;
+}
+
+.course-notes .nav-pills .nav-link.header {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #c9c9c9;
+    margin-bottom: 10px;
+
+}
+
+.course-notes .nav-pills .nav-link.item {
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px 5px;
+    clip-path: polygon(0% 0%, 96% 0, 100% 50%, 96% 100%, 0% 100%);
+}
+
+.course-notes .selected-category {
+    border: .4px solid #aebdb1 !important;
+}
+
+.course-notes .selected-category .categories-home-head {
+    color: #a57d04 !important;
+    text-shadow: 1.5px 1.5px 1px #157A6E;
+}
+
+.course-notes .selected-category .border-success {
+    border: none !important;
+}
+
+.course-notes .selected-category .add-course {
+    display: block;
+}
+
+.course-notes .selected-category div .jumbotron {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    background-color: #e5e6e7 !important;
+}
+
+.course-notes .card .btn.view-course {
+    width: fit-content;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #77B28C;
+    border-color: #77B28C;
+}
+
+.course-notes .card .btn.view-course:hover {
+    background-color: #157A6E;
+    border-color: #157A6E;
+}
+
+.course-notes .card h5 {
+    font-weight: bold;
+}
+
+.course-notes .nav-pills .nav-link.item.active,
+.course-notes .nav-pills .show>.nav-link.item {
+    color: rgb(241, 241, 241);
+    background-color: #157A6E;
+}
+
+.c-notes.resouces-card .card-img,
+.c-notes.resouces-card .card-img-top,
+.c-notes.resouces-card .card-img-bottom {
+    width: 100px;
+}
+
+.chapter-card .card-header {
+    background-color: #d4edda;
+}
+
+.chapter-card .card-header .btn-group-sm>.btn,
+.chapter-card .card-header .btn-sm {
+    font-size: 1.1rem !important;
+    line-height: 1.2 !important;
+}
+
+.course-notes .share-btn {
+    font-size: .7rem;
+}
+
+@keyframes answer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* BIG TABLET */
+
+@media(max-width: 1024px) {
+    .answer-option.btn.btn-outline-info {
+        transition: none;
+    }
+}
+
+/* SMALL TABLET & MOBILES*/
+@media(max-width: 768px) {
+
+    header .navbar-brand {
+        margin: 0 auto;
+    }
+
+    div .jumbotron {
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+    div .jumbotron h1 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    div .jumbotron p {
+        font-size: .8rem;
+    }
+
+    div .contact,
+    div .about {
+        margin: 0;
+    }
+
+    div .contact h3,
+    div .about h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    div .contact>div,
+    div .about>div {
+        padding: 0 !important;
+    }
+
+    .posts .text-primary a,
+    .posts .text-primary a:active {
+        font-size: .9rem !important;
+        font-weight: 900;
+    }
+
+    .posts h4 {
+        font-size: .8rem !important;
+    }
+
+    .posts .details {
+        font-size: 0.66rem !important;
+    }
+
+    .tags p {
+        padding-top: 0.08rem;
+        padding-bottom: 0.08rem;
+        border: .4px solid #6c757d;
+        border-radius: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .container {
+        width: 90% !important;
+    }
+
+    .question-section.w-75 {
+        width: 90% !important;
+    }
+
+    .answer.w-25 {
+        width: 75% !important;
+    }
+
+    button.answer-option {
+        width: 90% !important
+    }
+
+    .search input::placeholder {
+        font-size: .7rem;
+        margin-left: 1rem !important;
+    }
+
+    .search input {
+        height: 1.8rem;
+        padding: .35rem .9rem;
+    }
+
+    div.input-group-append {
+        height: 1.8rem;
+    }
+
+    .forgot-password .w-50 {
+        width: 100% !important;
+    }
+
+    .breadcrumb {
+        font-size: .7rem;
+    }
+
+    .view-question h4 {
+        font-size: .7rem;
+    }
+
+    .view-question li {
+        font-size: .6rem;
+    }
+
+    .actions .btn-group-sm>.btn,
+    .btn-sm {
+        font-size: .5rem !important;
+    }
+
+    form.edit-question,
+    form.create-question {
+        font-size: .7rem;
+    }
+
+    form.edit-question input,
+    form.create-question input {
+        font-size: .6rem;
+        padding: .3rem .4rem;
+    }
+
+    form.create-question input {
+        padding: .3rem .4rem;
+    }
+
+    .one-cat-desc {
+        font-size: .5rem;
+    }
+
+    .single-category .toast-header {
+        font-size: .65rem !important;
+    }
+
+    .single-category .toast-body {
+        font-size: .6rem !important;
+    }
+
+    header .navbar-collapse {
+        font-size: .7rem !important;
+    }
+
+    header .navbar-collapse.show {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .past-scores h3,
+    .similar-quizes h4 {
+        font-size: .9rem;
+        font-weight: bolder !important;
+    }
+
+    .marks-status h4,
+    .score-section h5 {
+        font-size: .8rem;
+        font-weight: bolder !important;
+    }
+
+    .all-scores {
+        font-size: .5rem !important;
+    }
+
+    .prevNext .btn {
+        height: max-content;
+        line-height: 1.1;
+        font-size: .8rem;
+    }
+
+    .prevNext ul {
+        height: max-content;
+        line-height: 1;
+        font-size: .7rem;
+    }
+
+    .prevNext ul li {
+        margin-top: .4rem;
+    }
+
+    .quiz-carousel .carousel-item img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .quiz-carousel .carousel-caption {
+        width: 100% !important;
+        padding: 0;
+        display: block !important;
+        left: 0;
+    }
+
+    .quiz-carousel .carousel-caption h3 {
+        font-size: 1rem;
+    }
+
+    .quiz-carousel .carousel-caption p {
+        font-size: .66rem;
+    }
+
+    .scores-pagination .btn {
+        padding: .18rem .4rem;
+        margin-left: .5rem;
+    }
+
+    .course-notes .nav-pills .nav-link.header {
+        font-size: 1.2rem;
+    }
+
+    .course-notes .nav-pills .nav-link.item {
+        font-size: .8rem;
+        padding: 12px 0px 12px 5px;
+    }
+
+    .course-notes .selected-category h3 {
+        font-size: 1.4rem;
+    }
+
+    .course-notes .selected-category h4 {
+        font-size: 1.25rem;
+        padding-top: 1rem;
+    }
+
+}
+
+/* MOBILES*/
+@media(max-width: 414px) {
+
+    .mobile-categories .mob-cat-btn {
+        border: 1.3px solid #157A6E;
+        font-size: .8rem;
+        font-weight: 900;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    .mobile-categories .list-group {
+        border: .2px solid #157A6E;
+    }
+
+    .mobile-categories .mob-quiz {
+        font-size: .8rem;
+        color: #17a2b8;
+        font-weight: 900;
+    }
+
+    .course-notes .row .col {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .course-notes .row .col h5 {
+        font-size: .92rem;
+        margin-bottom: 1rem !important;
+    }
+
+    .course-notes .courses-content .navbar-light .navbar-brand,
+    .course-notes .courses-content .navbar-light .navbar-toggler {
+        color: #157A6E;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .course-notes .navbar-light .navbar-nav .nav-link {
+        color: #157A6E;
+        font-size: .7rem;
+        padding-left: .4rem;
+        font-weight: bold;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        text-transform: uppercase;
+    }
+
+    .course-notes .navbar-light .navbar-nav .active>.nav-link,
+    .course-notes .navbar-light .navbar-nav .nav-link.active,
+    .course-notes .navbar-light .navbar-nav .nav-link.show,
+    .course-notes .navbar-light .navbar-nav .show>.nav-link {
+        color: rgb(241, 241, 241);
+        background-color: #157A6E;
+    }
+
+    .course-notes .selected-category h3 {
+        font-size: 1.1rem;
+    }
+
+    .course-notes .selected-category h4 {
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+
+    .course-notes .selected-category .card-body {
+        padding: .8rem;
+    }
+
+    .course-notes .selected-category .list-group-item {
+        padding: .2rem
+    }
+
+    .course-notes .selected-category .jumbotron {
+        padding: 1rem .6rem;
+        margin-bottom: .2rem;
+    }
+
+    .course-notes .selected-category .nav-link {
+        padding: .1rem .5rem;
+        font-size: .65rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #157A6E;
+    }
+
+    .course-notes .card h5 {
+        font-size: .8rem;
+    }
+
+    .course-notes .card p {
+        font-size: .66rem;
+    }
+
+    .course-notes .card .btn {
+        font-size: .66rem;
+        padding: 4px 8px;
+    }
+
+    .course-notes div .jumbotron p {
+        font-size: .7rem;
+    }
+
+    .course-notes .share-text {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .course-notes .share-btn {
+        display: block;
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .view-course-container .alert,
+    .view-course-container .chapter-card,
+    .view-course-container .chapter-card .card-header {
+        padding: .4rem .6rem;
+    }
+
+    .view-course-container .breadcrumb {
+        font-size: .6rem;
+        margin-bottom: .6rem;
+    }
+
+    .view-course-container h4 {
+        font-size: .8rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .view-course-container h5 {
+        font-size: .6rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .view-course-container p {
+        font-size: .6rem;
+    }
+
+    .view-course-container p.text-muted {
+        font-size: .5rem;
+    }
+
+    .view-course-container .chapter-card .card-header span {
+        font-size: .8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .view-course-container .chapter-card .card-body {
+        padding: 0;
+    }
+
+    .view-course-container .chapter-card .card-body .add-notes-btn {
+        margin-left: auto;
+    }
+
+    .view-course-container #accordion .c-notes.resouces-card {
+        padding: 0;
+    }
+
+    .view-course-container #accordion .c-notes.resouces-card .card-img,
+    .view-course-container #accordion .c-notes.resouces-card .card-img-top,
+    .view-course-container #accordion .c-notes.resouces-card .card-img-bottom {
+        width: 50px;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card .card-body {
+        padding-left: .4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card h6 {
+        font-size: .48rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card p {
+        font-size: .5rem;
+        margin-bottom: .4rem;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card .action-btns {
+        display: flex;
+        justify-content: center;
+        font-size: .6rem;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card .action-btns .btn {
+        font-size: .6rem;
+        padding: .1rem .5rem !important;
+    }
+
+    .view-course-container .chapter-card .c-notes.resouces-card .action-btns .btn a {
+        font-size: .4rem;
+    }
+
+    header .collapse.show .btn a {
+        font-size: .9rem;
+    }
+
+
+}

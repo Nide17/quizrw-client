@@ -1,0 +1,17 @@
+export const SET_QUIZES = 'SET_QUIZES';
+export const QUIZES_LOADING = 'QUIZES_LOADING';
+
+export const GET_ONE_QUIZ = 'GET_ONE_QUIZ';
+export const GET_ONE_QUIZ_FAIL = 'GET_ONE_QUIZ_FAIL';
+
+export const CREATE_QUIZ = 'CREATE_QUIZ';
+export const CREATE_QUIZ_FAIL = 'CREATE_QUIZ_FAIL';
+
+export const NOTIFY_USERS = 'NOTIFY_USERS';
+export const NOTIFY_USERS_FAIL = 'NOTIFY_USERS_FAIL';
+
+export const UPDATE_QUIZ = 'UPDATE_QUIZ';
+export const UPDATE_QUIZ_FAIL = 'UPDATE_QUIZ_FAIL';
+
+export const DELETE_QUIZ = 'DELETE_QUIZ';
+export const DELETE_QUIZ_FAIL = 'DELETE_QUIZ_FAIL';
