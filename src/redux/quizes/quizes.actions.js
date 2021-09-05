@@ -5,7 +5,7 @@ import { SET_QUIZES, GET_ONE_QUIZ, GET_ONE_QUIZ_FAIL, CREATE_QUIZ, CREATE_QUIZ_F
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all quizes

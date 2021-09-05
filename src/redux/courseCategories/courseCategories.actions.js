@@ -4,7 +4,7 @@ import { GET_COURSE_CATEGORIES, GET_COURSE_CATEGORIES_FAIL, CREATE_COURSE_CATEGO
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all course categories

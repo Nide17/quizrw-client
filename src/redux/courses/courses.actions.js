@@ -4,7 +4,7 @@ import { GET_COURSES, GET_ONE_COURSE, ONE_COURSE_LOADING, GET_ONE_COURSE_FAIL, G
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all courses

@@ -6,7 +6,7 @@ import { returnErrors } from "../error/error.actions";
 import { returnSuccess } from '../success/success.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // dispatch(action)

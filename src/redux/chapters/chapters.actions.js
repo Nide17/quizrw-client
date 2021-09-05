@@ -4,7 +4,7 @@ import { GET_CHAPTERS, GET_CHAPTERS_BY_COURSE_FAIL, GET_CHAPTERS_BY_COURSE, GET_
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all chapters

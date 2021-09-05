@@ -4,7 +4,7 @@ import { SET_CATEGORIES, GET_ONE_CATEGORY, GET_ONE_CATEGORY_FAIL, SET_CATEGORIES
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all categories

@@ -5,7 +5,7 @@ import { GET_NOTES, GET_NOTES_FAIL, GET_NOTES_BY_CHAPTER_FAIL, NOTES_BY_CHAPTER_
 import { tokenConfig, uploadConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all notes
@@ -57,8 +57,8 @@ export const createNotes = (newNotes, onUploadProgress) => async (dispatch, getS
           type: CREATE_NOTE,
           payload: res.data
         }))
-        .then(res => 
-          dispatch(returnSuccess('Notes uploaded successfully!', 200, 'CREATE_NOTE')))
+      .then(res =>
+        dispatch(returnSuccess('Notes uploaded successfully!', 200, 'CREATE_NOTE')))
 
   } catch (err) {
     dispatch(returnErrors(err.response.data, err.response.status, 'CREATE_NOTE_FAIL'));

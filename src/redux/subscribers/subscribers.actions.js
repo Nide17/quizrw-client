@@ -5,7 +5,7 @@ import { tokenConfig } from '../auth/auth.actions'
 import { returnErrors } from "../error/error.actions";
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // dispatch(action)

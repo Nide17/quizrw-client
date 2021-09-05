@@ -4,7 +4,7 @@ import { GET_SCORES, GET_ONE_SCORE, GET_ONE_SCORE_FAIL, GET_TAKER_SCORES, GET_TA
 import { tokenConfig } from '../auth/auth.actions'
 
 const axiosInstance = axios.create({
-  baseURL: 'https://quizrw.herokuapp.com',
+  baseURL: 'https://quizrw-server.herokuapp.com/',
 });
 
 // View all scores
